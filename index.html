@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiantian Ventures | Sustainable Resource Management</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #0f0f0f;
+            --surface-dark: #1a1a1a;
+            --primary-green: #2e7d32;
+            --accent-green: #66bb6a;
+            --text-main: #f0f0f0;
+            --text-dim: #a0a0a0;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bg-dark);
+            color: var(--text-main);
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Section */
+        header {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?auto=format&fit=crop&q=80&w=1500');
+            background-size: cover;
+            background-position: center;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            margin: 0;
+            color: #fff;
+        }
+
+        .subtitle {
+            font-size: 1rem;
+            letter-spacing: 6px;
+            color: var(--accent-green);
+            text-transform: uppercase;
+            margin-top: 10px;
+        }
+
+        /* Content Sections */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 100px 20px;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--surface-dark);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: 0.4s;
+            border: 1px solid #333;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+            border-color: var(--primary-green);
+        }
+
+        .service-img {
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .service-content {
+            padding: 25px;
+        }
+
+        .service-content h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-green);
+            margin-top: 0;
+        }
+
+        /* Credentials Section */
+        .credentials {
+            background-color: #111;
+            padding: 60px 0;
+            text-align: center;
+            border-top: 1px solid #222;
+        }
+
+        .cert-info {
+            display: inline-block;
+            text-align: left;
+            background: var(--surface-dark);
+            padding: 30px;
+            border-radius: 10px;
+            border-left: 4px solid var(--primary-green);
+        }
+
+        footer {
+            padding: 50px;
+            text-align: center;
+            color: var(--text-dim);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TIANTIAN VENTURES</h1>
+        <div class="subtitle">Nature &bull; Sustainability &bull; Growth</div>
+    </header>
+
+    <section class="container">
+        <h2 class="section-title">Our Specialized Services</h2>
+        <div class="services-grid">
+            
+            <!-- Agriculture -->
+            <div class="service-card">
+                <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1523348837708-15d4a09cfac2?auto=format&fit=crop&q=80&w=600');"></div>
+                <div class="service-content">
+                    <h3>Agriculture</h3>
+                    <p>Modern crop cultivation and livestock management focused on high-yield, sustainable practices to ensure food security.</p>
+                </div>
+            </div>
+
+            <!-- Forestry -->
+            <div class="service-card">
+                <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&q=80&w=600');"></div>
+                <div class="service-content">
+                    <h3>Forestry</h3>
+                    <p>Responsible management of timber resources and reforestation projects to preserve the natural ecosystem.</p>
+                </div>
+            </div>
+
+            <!-- Fishing -->
+            <div class="service-card">
+                <div class="service-img" style="background-image: url('https://images.unsplash.com/photo-1529230182282-7478b0fe7b3c?auto=format&fit=crop&q=80&w=600');"></div>
+                <div class="service-content">
+                    <h3>Fishing</h3>
+                    <p>Professional aquatic resource management and ethical fishing practices within local waterways.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="credentials">
+        <div class="container" style="padding: 0;">
+            <h2 class="section-title">Verified Registration</h2>
+            <div class="cert-info">
+                <p><strong>Business Name:</strong> Tiantian Ventures</p>
+                <p><strong>Registration No:</strong> BN 9208642</p>
+                <p><strong>Tax ID:</strong> 33831076-0001</p>
+                <p><strong>Location:</strong> Gumel, Jigawa State, Nigeria</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Tiantian Ventures &copy; 2026. Registered as a Business Name under the Companies and Allied Matters Act 2020.</p>
+        <p style="margin-top: 10px; color: #555;">Contact: tiantianfundmanagement1623@gmail.com</p>
+    </footer>
+
+</body>
+</html>
